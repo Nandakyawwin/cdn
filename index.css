@@ -1,0 +1,37 @@
+/*to make the placeholder for animate and u can change the animation color and time
+///to set the main div class as "box".//
+//Note::U can set class for form div in form as "fani1".//
+ //to set the input class as "fanimal1" and U need to set the attribute called "required".//
+ //to set the label look like Username or password as "fanibel1".//
+*/
+.box .fani1{
+	position: relative;
+}
+.box .fani1 .fanimal1{
+	width: 100%;
+	font-size: 16px;
+	padding: 10px 0;
+	color: white;
+	margin-bottom: 30px;
+	border: none;
+	border-bottom: 1px solid white;
+	outline: none;
+	background: transparent;
+}
+.box .fani1 .fanibel1{
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px 0;
+	color: white;
+	pointer-events: none;
+	transition: .5s;
+}
+
+.box .fani1 .fanimal1:focus ~ .fanibel1,
+.box .fani1 .fanimal1:valid ~ .fanibel1{
+	top: -19px;
+	left: 0;
+	color: red;
+	font-size: 11px;
+}
